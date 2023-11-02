@@ -1,5 +1,6 @@
 GAMEBOOK APP
 
+![image](https://github.com/Markkelvin14/GameBook/assets/122996163/60d6c191-1388-4418-a370-68798872381c)
 
 
 The GameBook App is a simple web application that allows users to engage with each other through making posts about games, game stories, reviews about the a game. It provides users with the ability to create an account and view other users content and follow along. this allows users with common interests to share their opinion about a particular game and help others learn from those stories This README.md file provides information about the app, its features, and how to set it up and use it.
