@@ -15,7 +15,7 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
             {% if current_user.is_authenticated %}
-              <a class="navbar-brand mr-4" href="{{ url_for('home') }}"><h2 data-text="&nbsp;GameBook&nbsp;">&nbsp;GameBook&nbsp;</h2></a>
+              <a class="navbar-brand mr-4" href="{{ url_for('main.home') }}"><h2 data-text="&nbsp;GameBook&nbsp;">&nbsp;GameBook&nbsp;</h2></a>
             {% else %}
               <a class="navbar-brand mr-4" href="/"><h2 data-text="&nbsp;GameBook&nbsp;">&nbsp;GameBook&nbsp;</h2></a>
           {% endif %}
@@ -24,8 +24,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
-              <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
+              <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
+              <a class="nav-item nav-link" href="{{ url_for('main.about') }}">About</a>
             </div>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -34,11 +34,11 @@
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
                 {% if current_user.is_authenticated %}
-                  <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
-                  <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+                  <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Account</a>
+                  <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Logout</a>
                 {% else %}
-                  <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
-                  <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+                  <a class="nav-item nav-link" href="{{ url_for('users.login') }}">Login</a>
+                  <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Register</a>
               {% endif %}
             </div>
           </div>
